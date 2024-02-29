@@ -15,6 +15,8 @@ window = Tk()
 # Sets size of the window otherwise it's to small to see the background.
 window.geometry("400x200")
 
+red_btn = Button(window, text="Red.", command=red_click)
+blue_btn= Button(window, text="Blue.", command=blue_click)
 red_btn.pack()
 blue_btn.pack()
 
