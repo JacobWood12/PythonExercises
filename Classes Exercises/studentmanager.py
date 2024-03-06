@@ -1,6 +1,7 @@
 # Imports tkinter for GUI.
 from tkinter import *
 
+# Starts the student class.
 class Student:
     def __init__(self, name):
         self.first_name = name
@@ -20,18 +21,25 @@ def show_grade():
     pass
 
 
+# Starts the dictionary with currently no students.
 csc_l2 = []
 
+# Adds me as a student with Excellence.
 csc_l2.append(Student("Jacob"))
 csc_l2[0].set_grade("Excellence.")
 
+# Adds Ken as a student with a grade of Achieved (he asked for it).
+csc_l2.append(Student("Ken"))
+csc_l2[1].set_grade("Achieved.")
+
+# Sets up window.
 window = Tk()
 window.geometry("300x300")
 
 grade_label = Label()
 grade_label.pack()
 
-show_grade_btn = Button(text="Show Grade.", command=show_grade)
-show_grade_btn.pack()
+# This isn't finished.
+grades_list = tk.listbox
 
 window.mainloop()
