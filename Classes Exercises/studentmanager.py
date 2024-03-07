@@ -3,17 +3,18 @@ from tkinter import *
 
 # Starts the student class.
 class Student:
+
     def __init__(self, name):
-        self.first_name = name
-    
-    def display_name(self):
-        print(self.first_name)
+        self.name = name
+
+    def get_grade(self):
+        return self.grade
 
     def set_grade(self, grade):
         self.grade = grade
-    
-    def get_grade(self):
-        return self.grade
+
+    def display_name(self):
+        print(self.first_name)
     
 def show_grade():
     # Show grade using a label.
