@@ -40,6 +40,6 @@ grade_label.pack()
 
 # Show grade button.
 show_grade_btn = Button(text="Show Grade.", command=show_grade)
-show_grade_btn.pacck()
+show_grade_btn.pack()
 
 window.mainloop()
