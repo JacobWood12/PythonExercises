@@ -18,20 +18,18 @@ class Student:
     
 def show_grade():
     # Show grade using a label.
-    grade_label.config(text=csc_l2[0].get_grade())
-    pass
-
+    grade_label.config(text=csc_2[0].get_grade())
 
 # Starts the dictionary with currently no students.
-csc_l2 = []
+csc_2 = []
 
 # Adds me as a student with Excellence.
-csc_l2.append(Student("Jacob"))
-csc_l2[0].set_grade("Excellence.")
+csc_2.append(Student("Jacob"))
+csc_2[0].set_grade("Excellence.")
 
 # Adds Ken as a student with a grade of Achieved (he asked for it).
-csc_l2.append(Student("Ken"))
-csc_l2[1].set_grade("Achieved.")
+csc_2.append(Student("Ken"))
+csc_2[1].set_grade("Achieved.")
 
 # Sets up window.
 window = Tk()
