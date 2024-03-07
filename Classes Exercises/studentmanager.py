@@ -38,7 +38,8 @@ window.geometry("300x300")
 grade_label = Label()
 grade_label.pack()
 
-# This isn't finished.
-grades_list = tk.listbox
+# Show grade button.
+show_grade_btn = Button(text="Show Grade.", command=show_grade)
+show_grade_btn.pacck()
 
 window.mainloop()
