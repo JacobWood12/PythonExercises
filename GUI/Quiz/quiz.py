@@ -8,7 +8,7 @@ class QuizStarter:
         background_colour="#C73D2D"
 
         # Sets up frame.
-        self.quiz_frame = Frame(parent, bg = background_color, padx=100, pady=100)
+        self.quiz_frame = Frame(parent, bg = background_colour, padx=100, pady=100)
         self.quiz_frame.grid()
 
         # Heading label widget.
@@ -19,7 +19,7 @@ class QuizStarter:
         self.var1=IntVar()
 
         # Username label.
-        self.user_label=Label(self.quiz_frame, text="Please enter your username below: ", font=("Futura", "16"), bg=background_color)
+        self.user_label=Label(self.quiz_frame, text="Please enter your username below: ", font=("Futura", "16"), bg=background_colour)
         self.user_label.grid(row=1, padx=20, pady=20)
 
         # Answer entry box.
@@ -27,7 +27,7 @@ class QuizStarter:
         self.entry_box.grid(row=2,padx=20, pady=20)
 
         # Continue button.
-        self.continue_button = Button(self-quiz_frame, text="Continue.", font=("Roboto Slab", "13", "bold"), bg="orange", command=self.name_collection)
+        self.continue_button = Button(self.quiz_frame, text="Continue.", font=("Roboto Slab", "13", "bold"), bg="orange", command=self.name_collection)
         self.continue_button.grid(row=3, padx=20, pady=20)
     
     def name_collection(self):
@@ -42,4 +42,7 @@ if __name__ == "__main__":
     root = Tk()
     # Title of window.
     root.title("Quiz")
+    # Makes an instance of the QuizStarter class.
+    quiz_instance = QuizStarter(root)
+    # Keeps window from closing.
     root.mainloop()
