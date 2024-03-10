@@ -1,6 +1,14 @@
 # Import tkinter for GUI.
 from tkinter import *
-names = [] # Names will be put in here later for scoreboard etc.
+# Import randow to pick questions in a random order.
+import random
+
+# Names will be put in here later for scoreboard etc.
+names = []
+global questions_answers
+# Will store questions that have already been asked so they don't get randomly picked again.
+asked = []
+score = int(0)
 
 class QuizStarter:
     def __init__(self, parent):
