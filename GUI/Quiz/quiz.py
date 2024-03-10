@@ -73,15 +73,6 @@ class QuizStarter:
         # Closes starter window.
         self.quiz_frame.destroy()
 
-# Start of program.
-if __name__ == "__main__":
-    root = Tk()
-    # Title of window.
-    root.title("Quiz")
-    # Makes an instance of the QuizStarter class.
-    quiz_instance = QuizStarter(root)
-    # Keeps window from closing.
-    root.mainloop()
 
 def randomiser():
     # Makes this function used the qnum variable from elsewhere.
@@ -94,4 +85,14 @@ def randomiser():
     elif qnum in asked:
         randomiser ()
 
-randomiser()    
+randomiser()
+
+# Start of program.
+if __name__ == "__main__":
+    root = Tk()
+    # Title of window.
+    root.title("Quiz")
+    # Makes an instance of the QuizStarter class.
+    quiz_instance = QuizStarter(root)
+    # Keeps window from closing.
+    root.mainloop()
