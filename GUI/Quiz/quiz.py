@@ -54,3 +54,16 @@ if __name__ == "__main__":
     quiz_instance = QuizStarter(root)
     # Keeps window from closing.
     root.mainloop()
+
+def randomiser():
+    # Makes this function used the qnum variable from elsewhere.
+    global qnum
+    # Picks a random order of questions.
+    qnum = random.randint (1,10)
+    # Checks question selected against previously asked question so they're not asked twice.
+    if qum not in asked:
+        asked.append(qnum)
+    elif qnum in asked:
+        randomiser ()
+
+randomiser()
