@@ -66,12 +66,12 @@ class QuizStarter:
         self.score_label=Label(self.quiz_frame, text="SCORE", font=("Tw Cen MT", "16"), bg=background_color)
         self.score_label.grid(row=8, padx=10, pady=1)
     
-def name_collection(self):
-    name=self.entry_box.get()
-    # Adds name entered earlier into previously empty names dictionary.
-    names.append(name)
-    # Closes starter window.
-    self.quiz_frame.destroy()
+    def name_collection(self):
+        name=self.entry_box.get()
+        # Adds name entered earlier into previously empty names dictionary.
+        names.append(name)
+        # Closes starter window.
+        self.quiz_frame.destroy()
 
 # Start of program.
 if __name__ == "__main__":
@@ -94,4 +94,4 @@ def randomiser():
     elif qnum in asked:
         randomiser ()
 
-randomiser()
+randomiser()    
