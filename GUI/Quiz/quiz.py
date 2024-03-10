@@ -89,7 +89,7 @@ def randomiser():
     # Picks a random order of questions.
     qnum = random.randint (1,10)
     # Checks question selected against previously asked question so they're not asked twice.
-    if qum not in asked:
+    if qnum not in asked:
         asked.append(qnum)
     elif qnum in asked:
         randomiser ()
