@@ -53,22 +53,22 @@ class QuizStarter:
         self.continue_button.grid(row=3, padx=20, pady=20)
 
         # Radio button 1.
-        self.rb1= Radiobutton(self.quiz_frame, text=questions_answers [qnum][1], font=("Helvetica", "12"), bg=background_color, value=1, padx=10, pady=10,
+        self.rb1= Radiobutton(self.quiz_frame, text=questions_answers [qnum][1], font=("Helvetica", "12"), bg=background_colour, value=1, padx=10, pady=10,
             variable=self.var1, indicator = 0, background = "light blue")
         self.rb1.grid(row=2, sticky=W)
 
         # Radio button 2.
-        self.rb2= Radiobutton(self.quiz_frame, text=questions_answers [qnum][2], font=("Helvetica", "12"), bg=background_color, value=2, padx=10, pady=10,
+        self.rb2= Radiobutton(self.quiz_frame, text=questions_answers [qnum][2], font=("Helvetica", "12"), bg=background_colour, value=2, padx=10, pady=10,
             variable=self.var1, indicator = 0, background = "light blue")
         self.rb1.grid(row=2, sticky=W)
 
         # Radio button 3.
-        self.rb3= Radiobutton(self.quiz_frame, text=questions_answers [qnum][3], font=("Helvetica", "12"), bg=background_color, value=3, padx=10, pady=10,
+        self.rb3= Radiobutton(self.quiz_frame, text=questions_answers [qnum][3], font=("Helvetica", "12"), bg=background_colour, value=3, padx=10, pady=10,
             variable=self.var1, indicator = 0, background = "light blue")
         self.rb1.grid(row=3, sticky=W)
 
         # Radio button 4.
-        self.rb4= Radiobutton(self.quiz_frame, text=questions_answers [qnum][4], font=("Helvetica", "12"), bg=background_color, value=4, padx=10, pady=10,
+        self.rb4= Radiobutton(self.quiz_frame, text=questions_answers [qnum][4], font=("Helvetica", "12"), bg=background_colour, value=4, padx=10, pady=10,
             variable=self.var1, indicator = 0, background = "light blue")
         self.rb1.grid(row=4, sticky=W)
 
@@ -77,7 +77,7 @@ class QuizStarter:
         self.quiz_instance.grid(row=7, padx=5, pady=5)
 
         # Score label.
-        self.score_label=Label(self.quiz_frame, text="SCORE", font=("Tw Cen MT", "16"), bg=background_color)
+        self.score_label=Label(self.quiz_frame, text="SCORE", font=("Tw Cen MT", "16"), bg=background_colour)
         self.score_label.grid(row=8, padx=10, pady=1)
     
     def name_collection(self):
