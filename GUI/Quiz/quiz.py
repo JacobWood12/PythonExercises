@@ -20,8 +20,7 @@ questions_answers = {
     7: ["What does the sign containing the letters 'LSZ' mean", 'Low safety zone', "Low stability zone", "Lone star zone", 'Limited speed zone', 'Limited speed zone',4],
     8: ["What speed are you allowed to pass a school bus that has stopped to let students get on or off?", '20 km/h', "30 km/h", "70 km/h", '10 km/h', '20 km/h',1], 
     9: ["What is the maximum distance a load may extend in front of a car?", '2 meters forward of the front edge of the front seat', "4 meters forward of the front edge of the front seat", "3 meters forward of the front edge of the front seat", '2.5 meters forward of the front edge of the front seat', '3 meters forward of the front edge of the front seat',3],
-    10: ["To avoid being blinded by the headlights of another vehicle coming towards you what should you do?", 'Look to the left of the road', "Look to the centre of the road",
-"Wear sunglasses that have sufficient strength", 'Look to the right side of the road', 'Look to the left of the road',1],
+    10: ["To avoid being blinded by the headlights of another vehicle coming towards you what should you do?", 'Look to the left of the road', "Look to the centre of the road", "Wear sunglasses that have sufficient strength", 'Look to the right side of the road', 'Look to the left of the road',1],
     }
 
 class QuizStarter:
