@@ -1,6 +1,6 @@
 # Import tkinter for GUI.
 from tkinter import *
-# Import randow to pick questions in a random order.
+# Import random to pick questions in a random order.
 import random
 
 # Names will be put in here later for scoreboard etc.
