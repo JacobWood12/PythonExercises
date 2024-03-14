@@ -108,7 +108,7 @@ if __name__ == "__main__":
     root.title("Quiz")
     # Makes an instance of the Quiz class.
     quiz_instance = Quiz(root)
-    # I'm confused here, uf I call the Quiz class the window shows up REALLY wrong.
+    # I'm confused here, if I call the Quiz class the window shows up REALLY wrong.
     # Quiz(root)
     # Keeps window from closing.
     root.mainloop()
