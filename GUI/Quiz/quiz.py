@@ -23,7 +23,7 @@ questions_answers = {
     10: ["To avoid being blinded by the headlights of another vehicle coming towards you what should you do?", 'Look to the left of the road', "Look to the centre of the road", "Wear sunglasses that have sufficient strength", 'Look to the right side of the road', 'Look to the left of the road',1],
     }
 
-class QuizStarter:
+class Quiz:
     def __init__(self, parent):
         # Sets window background colour to a dark red.
         background_colour="#C73D2D"
@@ -85,6 +85,7 @@ class QuizStarter:
         names.append(name)
         # Closes starter window.
         self.quiz_frame.destroy()
+        Quiz(root)
 
 
 def randomiser():
@@ -105,9 +106,9 @@ if __name__ == "__main__":
     root = Tk()
     # Title of window.
     root.title("Quiz")
-    # Makes an instance of the QuizStarter class.
-    quiz_instance = QuizStarter(root)
-    # I'm confused here, there's no quiz class (even though I followed the slideshows), and if I call the QuizStarter class the window shows up REALLY wrong.
-    QuizStarter(root)
+    # Makes an instance of the Quiz class.
+    quiz_instance = Quiz(root)
+    # I'm confused here, there's no quiz class (even though I followed the slideshows), and if I call the Quiz class the window shows up REALLY wrong.
+    Quiz(root)
     # Keeps window from closing.
     root.mainloop()
