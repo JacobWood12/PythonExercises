@@ -72,12 +72,12 @@ class Quiz:
         self.rb1.grid(row=4, sticky=W)
 
         # Confirm button.
-        self.quiz_instance = Button(self.quiz_frame, text="Confirm.", font=("Roboto Slab", "13", "bold"), bg="SpringGreen3") # command="command=self.test_progress") to add.
-        self.quiz_instance.grid(row=7, padx=5, pady=5)
+        self.quiz_confirm = Button(self.quiz_frame, text="Confirm.", font=("Roboto Slab", "13", "bold"), bg="SpringGreen3") # command=self.test_progress)
+        # self.quiz_confirm.grid(row=7, padx=5, pady=5)
 
         # Score label.
         self.score_label=Label(self.quiz_frame, text="SCORE", font=("Tw Cen MT", "16"), bg=background_colour)
-        self.score_label.grid(row=8, padx=10, pady=1)
+        # self.score_label.grid(row=8, padx=10, pady=1)
     
     def name_collection(self):
         name=self.entry_box.get()
@@ -108,7 +108,7 @@ if __name__ == "__main__":
     root.title("Quiz")
     # Makes an instance of the Quiz class.
     quiz_instance = Quiz(root)
-    # I'm confused here, there's no quiz class (even though I followed the slideshows), and if I call the Quiz class the window shows up REALLY wrong.
-    Quiz(root)
+    # I'm confused here, uf I call the Quiz class the window shows up REALLY wrong.
+    # Quiz(root)
     # Keeps window from closing.
     root.mainloop()
