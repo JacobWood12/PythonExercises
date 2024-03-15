@@ -97,11 +97,11 @@ class Quiz:
 
         # Confirm button.
         self.quiz_confirm = Button(self.quiz_frame, text="Confirm.", font=("Roboto Slab", "13", "bold"), bg="SpringGreen3") # command=self.test_progress)
-        # self.quiz_confirm.grid(row=7, padx=5, pady=5)
+        self.quiz_confirm.grid(row=7, padx=5, pady=5)
 
         # Score label.
         self.score_label=Label(self.quiz_frame, text="SCORE", font=("Tw Cen MT", "16"), bg=background_colour)
-        # self.score_label.grid(row=8, padx=10, pady=1)
+        self.score_label.grid(row=8, padx=10, pady=1)
     
 
 
@@ -124,7 +124,5 @@ if __name__ == "__main__":
     root.title("Quiz")
     # Makes an instance of the Quiz class.
     quiz_instance = QuizStarter(root)
-    # I'm confused here, if I call the Quiz class the window shows up REALLY wrong.
-    # Quiz(root)
     # Keeps window from closing.
     root.mainloop()
