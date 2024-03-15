@@ -23,7 +23,7 @@ questions_answers = {
     10: ["To avoid being blinded by the headlights of another vehicle coming towards you what should you do?", 'Look to the left of the road', "Look to the centre of the road", "Wear sunglasses that have sufficient strength", 'Look to the right side of the road', 'Look to the left of the road',1],
     }
 
-class Quiz:
+class QuizStarter:
     def __init__(self, parent):
         # Sets window background colour to a dark red.
         background_colour="#C73D2D"
@@ -35,9 +35,6 @@ class Quiz:
         # Heading label widget.
         self.heading_label = Label(self.quiz_frame, text = "Quiz.", font=("Futura", "18", "bold"), bg=background_colour)
         self.heading_label.grid(row=0, padx=20)
-
-        # Stores radio button values.
-        self.var1=IntVar()
 
         # Username label.
         self.user_label=Label(self.quiz_frame, text="Please enter your username below: ", font=("Futura", "16"), bg=background_colour)
@@ -51,25 +48,52 @@ class Quiz:
         self.continue_button = Button(self.quiz_frame, text="Continue.", font=("Roboto Slab", "13", "bold"), bg="orange", command=self.name_collection)
         self.continue_button.grid(row=3, padx=20, pady=20)
 
+
+    def name_collection(self):
+        name=self.entry_box.get()
+        # Adds name entered earlier into previously empty names dictionary.
+        names.append(name)
+        # Closes starter window.
+        self.quiz_frame.destroy()
+        Quiz(root)
+
+
+class Quiz:
+    def __init__(self, parent):
+        # Sets window background colour to a dark red.
+        background_colour="#C73D2D"
+
+        # Sets up frame.
+        self.quiz_frame = Frame(parent, bg = background_colour, padx=100, pady=100)
+        self.quiz_frame.grid()
+
+        # Stores radio button values.
+        self.var1=IntVar()
+        randomiser()
+
+        # Heading label widget.
+        self.question_label = Label(self.quiz_frame, text=questions_answers [qnum][0], font=("Futura", "18", "bold"), bg=background_colour)
+        self.question_label.grid(row=0, padx=20)
+
         # Radio button 1.
         self.rb1= Radiobutton(self.quiz_frame, text=questions_answers [qnum][1], font=("Helvetica", "12"), bg=background_colour, value=1, padx=10, pady=10,
             variable=self.var1, indicator = 0, background = "light blue")
-        self.rb1.grid(row=2, sticky=W)
+        self.rb1.grid(row=1, sticky=W)
 
         # Radio button 2.
         self.rb2= Radiobutton(self.quiz_frame, text=questions_answers [qnum][2], font=("Helvetica", "12"), bg=background_colour, value=2, padx=10, pady=10,
             variable=self.var1, indicator = 0, background = "light blue")
-        self.rb1.grid(row=2, sticky=W)
+        self.rb2.grid(row=2, sticky=W)
 
         # Radio button 3.
         self.rb3= Radiobutton(self.quiz_frame, text=questions_answers [qnum][3], font=("Helvetica", "12"), bg=background_colour, value=3, padx=10, pady=10,
             variable=self.var1, indicator = 0, background = "light blue")
-        self.rb1.grid(row=3, sticky=W)
+        self.rb3.grid(row=3, sticky=W)
 
         # Radio button 4.
         self.rb4= Radiobutton(self.quiz_frame, text=questions_answers [qnum][4], font=("Helvetica", "12"), bg=background_colour, value=4, padx=10, pady=10,
             variable=self.var1, indicator = 0, background = "light blue")
-        self.rb1.grid(row=4, sticky=W)
+        self.rb4.grid(row=4, sticky=W)
 
         # Confirm button.
         self.quiz_confirm = Button(self.quiz_frame, text="Confirm.", font=("Roboto Slab", "13", "bold"), bg="SpringGreen3") # command=self.test_progress)
@@ -79,13 +103,7 @@ class Quiz:
         self.score_label=Label(self.quiz_frame, text="SCORE", font=("Tw Cen MT", "16"), bg=background_colour)
         # self.score_label.grid(row=8, padx=10, pady=1)
     
-    def name_collection(self):
-        name=self.entry_box.get()
-        # Adds name entered earlier into previously empty names dictionary.
-        names.append(name)
-        # Closes starter window.
-        self.quiz_frame.destroy()
-        Quiz(root)
+
 
 
 def randomiser():
@@ -97,9 +115,7 @@ def randomiser():
     if qnum not in asked:
         asked.append(qnum)
     elif qnum in asked:
-        randomiser ()
-
-randomiser()
+        randomiser()
 
 # Start of program.
 if __name__ == "__main__":
@@ -107,7 +123,7 @@ if __name__ == "__main__":
     # Title of window.
     root.title("Quiz")
     # Makes an instance of the Quiz class.
-    quiz_instance = Quiz(root)
+    quiz_instance = QuizStarter(root)
     # I'm confused here, if I call the Quiz class the window shows up REALLY wrong.
     # Quiz(root)
     # Keeps window from closing.
