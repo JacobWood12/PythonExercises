@@ -102,6 +102,21 @@ class Quiz:
         # Score label.
         self.score_label=Label(self.quiz_frame, text="SCORE", font=("Tw Cen MT", "16"), bg=background_colour)
         self.score_label.grid(row=8, padx=10, pady=1)
+
+        def questions_setup(self):
+            randomiser()
+            self.var1.set(0)
+            self.question_label.config(text=questions_answers[qnum][0])
+            self.rb1.config(text=questions_answers[qnum][1])
+            self.rb1.config(text=questions_answers[qnum][2])
+            self.rb1.config(text=questions_answers[qnum][3])
+            self.rb1.config(text=questions_answers[qnum][4])
+            self.rb1.config(text=questions_answers[qnum][5])
+            self.rb1.config(text=questions_answers[qnum][6])
+            self.rb1.config(text=questions_answers[qnum][7])
+            self.rb1.config(text=questions_answers[qnum][8])
+            self.rb1.config(text=questions_answers[qnum][9])
+            self.rb1.config(text=questions_answers[qnum][10])
     
 
 
