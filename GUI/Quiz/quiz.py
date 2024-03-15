@@ -96,28 +96,63 @@ class Quiz:
         self.rb4.grid(row=4, sticky=W)
 
         # Confirm button.
-        self.quiz_confirm = Button(self.quiz_frame, text="Confirm.", font=("Roboto Slab", "13", "bold"), bg="SpringGreen3") # command=self.test_progress)
-        self.quiz_confirm.grid(row=7, padx=5, pady=5)
+        self.quiz_instance = Button(self.quiz_frame, text="Confirm.", font=("Roboto Slab", "13", "bold"), bg="SpringGreen3", command=self.test_progress)
+        self.quiz_instance.grid(row=7, padx=5, pady=5)
 
         # Score label.
         self.score_label=Label(self.quiz_frame, text="SCORE", font=("Tw Cen MT", "16"), bg=background_colour)
         self.score_label.grid(row=8, padx=10, pady=1)
 
-        def questions_setup(self):
-            randomiser()
-            self.var1.set(0)
-            self.question_label.config(text=questions_answers[qnum][0])
-            self.rb1.config(text=questions_answers[qnum][1])
-            self.rb1.config(text=questions_answers[qnum][2])
-            self.rb1.config(text=questions_answers[qnum][3])
-            self.rb1.config(text=questions_answers[qnum][4])
-            self.rb1.config(text=questions_answers[qnum][5])
-            self.rb1.config(text=questions_answers[qnum][6])
-            self.rb1.config(text=questions_answers[qnum][7])
-            self.rb1.config(text=questions_answers[qnum][8])
-            self.rb1.config(text=questions_answers[qnum][9])
-            self.rb1.config(text=questions_answers[qnum][10])
+    def questions_setup(self):
+        randomiser()
+        self.var1.set(0)
+        self.question_label.config(text=questions_answers[qnum][0])
+        self.rb1.config(text=questions_answers[qnum][1])
+        self.rb2.config(text=questions_answers[qnum][2])
+        self.rb3.config(text=questions_answers[qnum][3])
+        self.rb4.config(text=questions_answers[qnum][4])
     
+    def test_progress(self):
+        # Makes this function use the score variable from the start.
+        global score
+        # Renames the score label every time the score changes.
+        scr_label=self.score_label
+        # Gets the user's answer choice.
+        choice=self.var1.get()
+        # Checks if it's the last question, and if so, ends the quiz afterwards.
+        if len(asked)>9:
+            if choice == questions_answers[qnum][6]:
+                score = score + 1
+                # Changes score label each time the score changes to the new one.
+                scr_label.configure(text=score)
+                self.quiz_instance.config(text="Confirm.")
+            else:
+                # Score stays the same because the user's answer was incorrect.
+                score+=0
+                scr_label.configure(text="The correct answer was: " + questions_answers[qnum][5] )
+                self.quiz_instance.config(text="Confirm.")
+        # If the length of the asked list is 9 questions or less, which means there are still questions to be asked.
+        else:
+            # If the user presses confirm without selecting an option.
+            if choice == 0:
+                self.quiz_instance.config(text="Please try again and select an option.")
+                choice = self.var1.get()
+            # If the user did make a choice.
+            else:
+                # If the user's choice is correct.
+                if choice == questions_answers [qnum][6]:
+                    score = score + 1
+                    scr_label.configure(text=score)
+                    self.questions_setup()
+                # If the user's choice was incorrect.
+                else:
+                    score+=0
+                    scr_label.configure(text="The correct answer was: " + questions_answers[qnum][5] )
+                    self.quiz_instance.config(text="Confirm.")
+                    self.questions_setup()
+
+
+
 
 
 
