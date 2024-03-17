@@ -1,5 +1,5 @@
 """ Import tkinter for GUI. """
-from tkinter import *
+from tkinter import Tk, Frame, Label, Entry, Button, Radiobutton, IntVar, W
 # Import random to pick questions in a random order.
 import random
 
