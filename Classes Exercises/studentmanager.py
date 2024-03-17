@@ -6,6 +6,7 @@ class Student:
 
     def __init__(self, name):
         self.name = name
+        self.grade = None
 
     def get_grade(self):
         return self.grade
