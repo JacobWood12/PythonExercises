@@ -8,7 +8,7 @@ names = []
 global qs_answers
 # Will store questions that have already been asked so they don't get randomly picked again.
 asked = []
-score = int(0)
+SCORE = int(0)
 
 qs_answers = {
     1: [
@@ -179,7 +179,7 @@ class Quiz:
         font=("Roboto Slab", "13", "bold"), bg="SpringGreen3", command=self.test_progress)
         self.quiz_instance.grid(row=7, padx=5, pady=5)
 
-        # Score label.
+        # SCORE label.
         self.scr_label=Label(self.quiz_frame, text="SCORE", font=("Tw Cen MT", "16"), bg=bg_colour)
         self.scr_label.grid(row=8, padx=10, pady=1)
 
@@ -193,22 +193,22 @@ class Quiz:
         self.rb4.config(text=qs_answers[qnum][4])
     
     def test_progress(self):
-        # Makes this function use the score variable from the start.
-        global score
-        # Renames the score label every time the score changes.
+        # Makes this function use the SCORE variable from the start.
+        global SCORE
+        # Renames the SCORE label every time the SCORE changes.
         scr_label=self.scr_label
         # Gets the user's answer choice.
         choice=self.var1.get()
         # Checks if it's the last question, and if so, ends the quiz afterwards.
         if len(asked)>9:
             if choice == qs_answers[qnum][6]:
-                score = score + 1
-                # Changes score label each time the score changes to the new one.
-                scr_label.configure(text=score)
+                SCORE = SCORE + 1
+                # Changes SCORE label each time the SCORE changes to the new one.
+                scr_label.configure(text=SCORE)
                 self.quiz_instance.config(text="Confirm.")
             else:
-                # Score stays the same because the user's answer was incorrect.
-                score+=0
+                # SCORE stays the same because the user's answer was incorrect.
+                SCORE+=0
                 scr_label.configure(text="The correct answer was: " + qs_answers[qnum][5] )
                 self.quiz_instance.config(text="Confirm.")
         # If the length of the asked list is 9 questions or less.
@@ -222,12 +222,12 @@ class Quiz:
             else:
                 # If the user's choice is correct.
                 if choice == qs_answers [qnum][6]:
-                    score = score + 1
-                    scr_label.configure(text=score)
+                    SCORE = SCORE + 1
+                    scr_label.configure(text=SCORE)
                     self.questions_setup()
                 # If the user's choice was incorrect.
                 else:
-                    score+=0
+                    SCORE+=0
                     scr_label.configure(text="The correct answer was: " + qs_answers[qnum][5] )
                     self.quiz_instance.config(text="Confirm.")
                     self.questions_setup()
