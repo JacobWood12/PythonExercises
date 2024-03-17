@@ -1,5 +1,5 @@
 # Imports tkinter for GUI.
-from tkinter import *
+from tkinter import Tk, Listbox, Label, Button
 
 # Starts the student class.
 class Student:

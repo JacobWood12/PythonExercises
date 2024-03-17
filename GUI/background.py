@@ -1,5 +1,5 @@
 # TKinter is for the GUI.
-from tkinter import *
+from tkinter import Tk, Button
 
 def red_click():
     print("You pressed the red button.")
