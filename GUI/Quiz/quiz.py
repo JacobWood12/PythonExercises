@@ -1,4 +1,4 @@
-# Import tkinter for GUI.
+""" Import tkinter for GUI. """
 from tkinter import *
 # Import random to pick questions in a random order.
 import random
@@ -92,6 +92,7 @@ qs_answers = {
     }
 
 class QuizStarter:
+    """ Sets up quiz with labels, frame, continue button and answer box. """
     def __init__(self, parent):
         # Sets window background colour to a dark red.
         bg_colour="#C73D2D"
@@ -124,6 +125,8 @@ class QuizStarter:
 
 
     def name_collection(self):
+        """ Gets name from user and adds it into dictionary, 
+        then closes that window and starts the quiz proper. """
         name=self.entry_box.get()
         # Adds name entered earlier into previously empty names dictionary.
         names.append(name)
@@ -133,6 +136,7 @@ class QuizStarter:
 
 
 class Quiz:
+    """ Main part of quiz, Contains heading label, radio buttons, confirm button and score label."""
     def __init__(self, parent):
         # Sets window background colour to a dark red.
         bg_colour="#C73D2D"
@@ -179,11 +183,12 @@ class Quiz:
         font=("Roboto Slab", "13", "bold"), bg="SpringGreen3", command=self.test_progress)
         self.quiz_instance.grid(row=7, padx=5, pady=5)
 
-        # SCORE label.
+        # Score label.
         self.scr_label=Label(self.quiz_frame, text="SCORE", font=("Tw Cen MT", "16"), bg=bg_colour)
         self.scr_label.grid(row=8, padx=10, pady=1)
 
     def questions_setup(self):
+        """ Sets up radio buttons with question answers. """
         randomiser()
         self.var1.set(0)
         self.question_label.config(text=qs_answers[qnum][0])
@@ -193,6 +198,8 @@ class Quiz:
         self.rb4.config(text=qs_answers[qnum][4])
     
     def test_progress(self):
+        """ Checks if the user's answers are correct, 
+        and if so moves them onto the next question and updates their score. """
         # Makes this function use the SCORE variable from the start.
         global SCORE
         # Renames the SCORE label every time the SCORE changes.
@@ -238,6 +245,7 @@ class Quiz:
 
 
 def randomiser():
+    """ Randomly orders questions. """
     # Makes this function used the qnum variable from elsewhere.
     global qnum
     # Picks a random order of questions.
