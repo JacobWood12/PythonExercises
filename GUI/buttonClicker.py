@@ -1,5 +1,5 @@
 # TKinter is for the GUI.
-from tkinter import *
+from tkinter import Tk, Button
 # Random is for the safe/unsafe message.
 import random
 clicks = int(0)
