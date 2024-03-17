@@ -1,3 +1,5 @@
+""" Sums all the multiples of 3 and 5 between 0 and 100. """
+
 # Lists every third and fifth number between 0 and 1000.
 range_three = list(range(0, 1000, 3))
 range_five = list(range(0, 1000, 5))

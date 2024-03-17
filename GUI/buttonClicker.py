@@ -1,10 +1,13 @@
-# TKinter is for the GUI.
+""" TKinter is for the GUI. """
 from tkinter import Tk, Button
-# Random is for the safe/unsafe message.
+
+""" Random is for the safe/unsafe message. """
 import random
+
 clicks = int(0)
 
 def btn_click():
+    """ Runs every time the user clicks the button. """
     global clicks
     clicks = int(clicks + 1)
     if clicks == 1:
