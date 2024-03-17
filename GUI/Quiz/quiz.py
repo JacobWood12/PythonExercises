@@ -72,7 +72,7 @@ qs_answers = {
         "70 km/h",
         '10 km/h',
         '20 km/h',1
-        ], 
+        ],
     9: [
         "What is the maximum distance a load may extend in front of a car?",
         '2 meters forward of the front edge of the front seat',
@@ -156,13 +156,13 @@ class Quiz:
 
         # Radio button 1.
         self.rb1= Radiobutton(self.quiz_frame, text=qs_answers [qnum][1], font=("Helvetica", "12"),
-            bg=bg_colour, value=1, padx=10, pady=10, 
+            bg=bg_colour, value=1, padx=10, pady=10,
             variable=self.var1, indicator = 0, background = "light blue")
         self.rb1.grid(row=1, sticky=W)
 
         # Radio button 2.
         self.rb2= Radiobutton(self.quiz_frame, text=qs_answers [qnum][2], font=("Helvetica", "12"),
-            bg=bg_colour, value=2, padx=10, pady=10, 
+            bg=bg_colour, value=2, padx=10, pady=10,
             variable=self.var1, indicator = 0, background = "light blue")
         self.rb2.grid(row=2, sticky=W)
 
@@ -196,7 +196,7 @@ class Quiz:
         self.rb2.config(text=qs_answers[qnum][2])
         self.rb3.config(text=qs_answers[qnum][3])
         self.rb4.config(text=qs_answers[qnum][4])
-    
+
     def test_progress(self):
         """ Checks if the user's answers are correct, 
         and if so moves them onto the next question and updates their score. """
