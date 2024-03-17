@@ -14,7 +14,7 @@ class Student:
         self.grade = grade
 
     def display_name(self):
-        print(self.first_name)
+        print(self.name)
     
 def show_grade():
     # Show grade using a label.
