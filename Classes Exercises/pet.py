@@ -40,4 +40,3 @@ while pet_1.fullness < 100:
     print("Enter the number of the food you would like to feed your pet.")
     food = input("1 - Carrots. \n 2 - Grass. \n 3 - Water. \n")
     Pet.eat(pet_1, food)
-    
