@@ -19,7 +19,7 @@ class Student:
     def display_name(self):
         """ Displays student's names. """
         print(self.name)
-    
+
 def show_grade():
     " Shows student's grades. Currently only show's the first student's grades (me). "
     # Show grade using a label.
