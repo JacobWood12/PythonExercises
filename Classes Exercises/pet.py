@@ -37,6 +37,7 @@ pet_1 = Pet(name)
 while pet_1.fullness < 100:
     print(f"\n{pet_1.name} is hungry.")
     print(f"It's currently {pet_1.fullness}% full.")
-    food = input("Enter the number of the food you would like to feed your pet. \n 1 - Carrots. \n 2 - Grass. \n 3 - Water. \n")
+    print("Enter the number of the food you would like to feed your pet.")
+    food = input("1 - Carrots. \n 2 - Grass. \n 3 - Water. \n")
     Pet.eat(pet_1, food)
     
