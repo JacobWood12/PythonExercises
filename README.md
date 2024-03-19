@@ -18,11 +18,11 @@ Shows a window with 2 students (me and Ken), and has a show grade buttons. It on
 
 Projects using a GUI (notable because this is the first year I've done GUIs). I think they'll all be using Tkinter.
 
-### Background
+### background.py
 
 Brings up a window with two buttons. One says "Red." and the other says "Blue." and you click one to change the background to the respective colour.
 
-### Button Clicker
+### button_clicker.py
 
 Baby's first Python GUI using Tkinter. It's pretty simple, you just click the button in the window that comes up, but with a sinister twist...
 
@@ -38,10 +38,14 @@ Projects related to maths (duh). I think they'll mostly be problems from [Projec
 
 Problem 1 on Project Euler. It finds the sum of all the multiples of 3 and 5 below 1000.
 
-## hello.txt
+## Other files
+
+Not projects, just for organisational purposes.
+
+### hello.txt
 
 We were learning how to use Git.
 
-## README.md
+### README.md
 
 This file.
