@@ -1,12 +1,14 @@
-# TKinter is for the GUI.
-from tkinter import *
+""" TKinter is for the GUI. """
+from tkinter import Tk, Button
 
 def red_click():
+    """ Run when the user clicks the red button. """
     print("You pressed the red button.")
     # Changes background to red.
     window['bg']='#e45858'
 
 def blue_click():
+    """ Runs when the user clicks the blue button. """
     print("You pressed the blue button.")
     # Changes background to blue.
     window['bg']='#6246ea'

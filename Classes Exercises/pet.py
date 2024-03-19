@@ -1,5 +1,7 @@
+""" The pet has no species. """
 class Pet():
-    # Starts a name field and sets it to empty until the user gives it a name later on.
+    """Only one instance of the pet class currently exists. """
+
     name = None
     # How hungry a pet is, zero being completely hungry and 100 being completely full.
     # Shown to the user as a percentage.
@@ -10,6 +12,7 @@ class Pet():
 
     # Takes a pet instance and a number representing a certain food as input.
     def eat(self, food):
+        """ Allows ths user to feed the pet carrots, grass or water. """
         print(f"{self.name} is eating {food}...")
         if food == "1": # Carrots.
             self.fullness = self.fullness + 10
@@ -34,6 +37,6 @@ pet_1 = Pet(name)
 while pet_1.fullness < 100:
     print(f"\n{pet_1.name} is hungry.")
     print(f"It's currently {pet_1.fullness}% full.")
-    food = input("Enter the number of the food you would like to feed your pet. \n 1 - Carrots. \n 2 - Grass. \n 3 - Water. \n")
+    print("Enter the number of the food you would like to feed your pet.")
+    food = input("1 - Carrots. \n 2 - Grass. \n 3 - Water. \n")
     Pet.eat(pet_1, food)
-    

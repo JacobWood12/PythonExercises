@@ -1,3 +1,5 @@
+""" Sums all the multiples of 3 and 5 between 0 and 100. """
+
 # Lists every third and fifth number between 0 and 1000.
 range_three = list(range(0, 1000, 3))
 range_five = list(range(0, 1000, 5))
@@ -6,8 +8,8 @@ range_five = list(range(0, 1000, 5))
 sum_three = int(sum(range_three))
 sum_five = int(sum(range_five))
 
-# Since multiples of fifteen are multiples of both three and five, they'll be double added.
-# So we'll need to subtract all mutiples of fifteen from the total sum to not double count those numbers.
+# Since multiples of fifteen are multiples of both three and five, they'll be double counted.
+# So we need to subtract all multiples of fifteen from the total to not double count those numbers.
 range_fifteen = list(range(0, 1000, 15))
 sum_fifteen = int(sum(range_fifteen))
 
