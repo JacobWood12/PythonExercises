@@ -42,10 +42,14 @@ Problem 1 on Project Euler. It finds the sum of all the multiples of 3 and 5 bel
 
 Not projects, just for organisational purposes.
 
-### hello.txt
+### .gitignore
 
-We were learning how to use Git.
+Specifies intentionally untracked files that Git should ignore. I just used the GitHub template for Python.
 
 ### README.md
 
 This file.
+
+### hello.txt
+
+We were learning how to use Git.
