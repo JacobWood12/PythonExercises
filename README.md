@@ -10,6 +10,10 @@ Exercises where we're using classes.
 
 A pet simulator. All you can do so far is feed your pet, and it doesn't have a particular species.
 
+### student_manager.py
+
+Shows a window with 2 students (me and Ken), and has a show grade buttons. It only shows my grade, an Excellence.
+
 ## GUI
 
 Projects using a GUI (notable because this is the first year I've done GUIs). I think they'll all be using Tkinter.
