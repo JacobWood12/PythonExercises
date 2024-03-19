@@ -20,7 +20,7 @@ Brings up a window with two buttons. One says "Red." and the other says "Blue." 
 
 ### Button Clicker
 
-Baby's first Python GUI using TKinter. It's pretty simple, you just click the button in the window that comes up, but with a sinister twist...
+Baby's first Python GUI using Tkinter. It's pretty simple, you just click the button in the window that comes up, but with a sinister twist...
 
 ### quiz.py
 
@@ -28,7 +28,7 @@ A GUI quiz about New Zealand road rules. Learning both GUI and classes.
 
 ## Maths
 
-Projects related to maths (duh). I think they'll mostly be problems from [Project Euler](projecteuler.net/archives), and maybe the NZIO (I think that's what it's called?).
+Projects related to maths (duh). I think they'll mostly be problems from [Project Euler](projecteuler.net/archives).
 
 ### multiples.py
 
