@@ -18,6 +18,20 @@ Shows a window with 2 students (me and Ken), and has a show grade buttons. It on
 
 Projects using a GUI (notable because this is the first year I've done GUIs). I think they'll all be using Tkinter.
 
+### House
+
+Brings up a purple window. It has the title "House" and a picture of a house, which is a button that does nothing.
+
+It's a folder because there are multiple files related to it (as per below).
+
+#### house.png
+
+A clip-art picture of a house on a light grey background that is used as a button in this program.
+
+#### house.py
+
+The program itself. Does what is described in the section above.
+
 ### background.py
 
 Brings up a window with two buttons. One says "Red." and the other says "Blue." and you click one to change the background to the respective colour.
