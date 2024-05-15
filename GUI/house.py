@@ -1,33 +1,34 @@
 ''' Tkinter is for the GUI. '''
-from tkinter import *
+from tkinter import Tk, Frame, Label, TOP, PhotoImage, Button, LEFT
 
+# Defines height and width of the main window.
 w_width = 500
 w_height = 700
 
-bg_color = "#E7DDFF"
+# Defines background colour as a light greyish purple.
+bg_colour = "#E7DDFF"
 
+# Initialises window.
 window = Tk()
 window.geometry(str(w_width) + "x" + str(w_height))
-window.title("My App")
+window.title("My App.")
 
-main_frame=Frame(background=bg_color, width=w_width, height=w_height)
+# Initialises main frame and packs it.
+main_frame=Frame(background=bg_colour, width=w_width, height=w_height)
 main_frame.pack()
 
-# Adding widgets to the root window
-Label(main_frame, text = "House", font =(
-	"Verdana", 15)).pack(side = TOP, pady = 10)
+# Add widgets to the root window.
+Label(main_frame, text = "House", font =("Verdana", 15)).pack(side = TOP, pady = 10)
 
-# Creating a photoimage object to use image
+# Creates a PhotoImage to use the house.png image.
+# If you're downloading this, make sure to download the image as well and change the path below.
 photo = PhotoImage(file = r"/Users/jacobwood/Documents/Programming/PythonExercises/GUI/house.png")
 
-# Resizing image to fit on button
+# Resizes image to fit on button.
 photoimage = photo.subsample(3,3)
 
-# here, image option is used to
-# set image on button
-# compound option is used to align
-# image on LEFT side of button
-Button(main_frame, image = photoimage,
-	   compound= LEFT).pack(side = TOP)
+# Uses the image option to set the image on it's own button.
+# The compound option is used to align the image on the LEFT side of the button.
+Button(main_frame, image = photoimage, compound= LEFT).pack(side = TOP)
 
 window.mainloop()
