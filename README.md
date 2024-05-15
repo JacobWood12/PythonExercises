@@ -37,6 +37,10 @@ This project is code that I copied then cleaned up from Mrs Chavez. If you want 
 
 </details>
 
+#### House example code.jpeg
+
+A picture (used in the pull-down menu below) of the original code on the projector from my seat in the middle of class. It's mostly readable.
+
 #### house.png
 
 A clip-art picture of a house on a light grey background that is used as a button in this program.
