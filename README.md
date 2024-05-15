@@ -24,6 +24,16 @@ Brings up a purple window. It has the title "House" and a picture of a house, wh
 
 It's a folder because there are multiple files related to it (as per below).
 
+This project is code that I copied then cleaned up from Mrs Chavez. If you want to see the version before cleaning up, switch to the `house` branch and go to commit `6a6893d (Started house.py.)`
+
+<details>
+
+<summary>A picture of the original code I copied for house.py.</summary>
+
+![A picture of the original code for house.py projected onto a wall.](GUI/House/House%20example%20code.jpeg)
+
+</details>
+
 #### house.png
 
 A clip-art picture of a house on a light grey background that is used as a button in this program.
