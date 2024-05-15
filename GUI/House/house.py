@@ -22,7 +22,7 @@ Label(main_frame, text = "House", font =("Verdana", 15)).pack(side = TOP, pady =
 
 # Creates a PhotoImage to use the house.png image.
 # If you're downloading this, make sure to download the image as well and change the path below.
-photo = PhotoImage(file = r"/Users/jacobwood/Documents/Programming/PythonExercises/GUI/house.png")
+photo = PhotoImage(file = r"/Users/jacobwood/Documents/Programming/PythonExercises/GUI/house/house.png")
 
 # Resizes image to fit on button.
 photoimage = photo.subsample(3,3)
