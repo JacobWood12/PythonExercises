@@ -20,6 +20,9 @@ Projects using a GUI (notable because this is the first year I've done GUIs). I 
 
 ### House
 
+> [!NOTE]
+> If you're copying this folder to your own device, make sure to go into house.py and change the filepath of house.jpeg to wherever the file is on your system. The current filepath will only work on my computer and I don't know how to use relative links.
+
 Brings up a purple window. It has the title "House" and a picture of a house, which is a button that does nothing.
 
 It's a folder because there are multiple files related to it (as per below).
