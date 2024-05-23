@@ -1,5 +1,6 @@
 """ This contains the main screens and functionality of the app Pride Conversation. """
 
+# Tkinter is for the GUI, random is for the random selection of words.
 import tkinter as tk
 import random
 
