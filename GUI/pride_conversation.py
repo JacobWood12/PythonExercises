@@ -27,10 +27,12 @@ window.title("Pride Conversation")
 # Functions
 
 def show_meaning_screen():
+	""" Shows the meaning screen for a word after the user says if they know it or not. """
 	WORD_screen.pack_forget()
 	MEANING_screen.pack()
 
 def next_word():
+	""" Advances to the next word after the meaning screen. """
 	global word_to_display
 
 	word_to_display = random.choice(word_to_display)
