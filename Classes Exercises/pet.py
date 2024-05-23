@@ -1,6 +1,6 @@
-""" The pet has no species. """
+""" A simple pet simulator, where you can feed your pet and that's it. """
 class Pet():
-    """Only one instance of the pet class currently exists. """
+    """ Sets up a pet with a name and hunger, both currently empty. """
 
     name = None
     # How hungry a pet is, zero being completely hungry and 100 being completely full.
@@ -12,7 +12,7 @@ class Pet():
 
     # Takes a pet instance and a number representing a certain food as input.
     def eat(self, food):
-        """ Allows ths user to feed the pet carrots, grass or water. """
+        """ Allows the user to feed the pet carrots, grass or water. """
         print(f"{self.name} is eating {food}...")
         if food == "1": # Carrots.
             self.fullness = self.fullness + 10

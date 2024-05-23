@@ -1,13 +1,12 @@
-""" TKinter is for the GUI. """
+""" Opens a window with a button to click, and counts how many times the button was clicked. """
+# Tkinter is for the GUI, random is for random selection.
 from tkinter import Tk, Button
-
-""" Random is for the safe/unsafe message. """
 import random
 
 CLICKS = int(0)
 
 def btn_click():
-    """ Runs every time the user CLICKS the button. """
+    """ Decides what happens each time the user clicks the button in the window. """
     global CLICKS
     CLICKS = int(CLICKS + 1)
     if CLICKS == 1:

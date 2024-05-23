@@ -1,8 +1,9 @@
-""" Imports tkinter for GUI. """
+""" Shows students and their grades. """
+# Imports Tkinter for the GUI.
 from tkinter import Tk, Listbox, Label, Button
 
 class Student:
-    """ Starts the student class. """
+    """ Sets up a student with the properties of a name and grade, currently empty. """
 
     def __init__(self, name):
         self.name = name
@@ -21,7 +22,7 @@ class Student:
         print(self.name)
 
 def show_grade():
-    " Shows student's grades. Currently only show's the first student's grades (me). "
+    " Shows student's grades. Currently only shows the first student's grades (me). "
     # Show grade using a label.
     grade_label.config(text=csc_2[0].get_grade())
 

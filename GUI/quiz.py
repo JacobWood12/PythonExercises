@@ -1,6 +1,6 @@
-""" Import tkinter for GUI. """
+""" A GUI quiz about New Zealand road rules. """
+# Tkinter is for the GUI, random is for randomly picking what question the user is asked.
 from tkinter import Tk, Frame, Label, Entry, Button, Radiobutton, IntVar, W
-# Import random to pick questions in a random order.
 import random
 
 # Names will be put in here later for scoreboard etc.

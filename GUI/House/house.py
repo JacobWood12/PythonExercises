@@ -1,4 +1,5 @@
-''' Tkinter is for the GUI. '''
+""" Brings up a window with a picture of and a title of a house. """
+# Tkinter is for the GUI.
 from tkinter import Tk, Frame, Label, TOP, PhotoImage, Button, LEFT
 
 # Defines height and width of the main window.
