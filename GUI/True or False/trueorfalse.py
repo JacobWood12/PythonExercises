@@ -64,4 +64,3 @@ class TrueOrFalseGame(tk.Frame):
 		if answer == True:
 			print("Quit game")
 			self.root.destroy()
-

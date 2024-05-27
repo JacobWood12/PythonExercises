@@ -33,4 +33,3 @@ class MainMenuScreen(tk.Frame):
 		if answer == True:
 			print("Exit app")
 			self.root.destroy()
-
