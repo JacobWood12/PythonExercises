@@ -34,7 +34,7 @@ class TrueOrFalseGame(tk.Frame):
 
 	def check_answer(self, answer):
 		""" Checks the user's selected answer against the questions dictionary. """
-		if(questions[self.current_question_index]["answer"] == answer):
+		if questions[self.current_question_index]["answer"] == answer:
 			print("CORRECT")
 		else:
 			print("WRONG")
