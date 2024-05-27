@@ -61,6 +61,6 @@ class TrueOrFalseGame(tk.Frame):
 		""" CLoses the window after confirmation."""
 		answer = messagebox.askyesno("Exit","Are you sure you want to quit the game?")
 
-		if answer == True:
+		if answer is True:
 			print("Quit game")
 			self.root.destroy()

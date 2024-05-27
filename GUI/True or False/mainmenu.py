@@ -30,6 +30,6 @@ class MainMenuScreen(tk.Frame):
 		""" Closes the window with confirmation, run upon pressing the "Exit" button. """
 		answer = messagebox.askyesno("Exit","Are you sure you want to exit?")
 
-		if answer == True:
+		if answer is True:
 			print("Exit app")
 			self.root.destroy()
