@@ -34,7 +34,6 @@ current_screen.place(relx=.5, rely=.5,anchor=tk.CENTER)
 def login_success(*args):
 	""" Opens the main menu screen when the user enters the correct username and password. """
 	print("Go to main menu")
-	global main_menu_screen
 	switch_screen(main_menu_screen)
 
 def switch_screen(new_screen):
@@ -47,7 +46,6 @@ def switch_screen(new_screen):
 def start_new_game(*args):
 	""" Restarts the program and goes back to the game screen. """
 	print("Starting new game...")
-	global game_screen
 	switch_screen(game_screen)
 
 
