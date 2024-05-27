@@ -1,17 +1,18 @@
+""" Contains the code for the True or False game itself. """
 import tkinter as tk
 from tkinter import messagebox
 from true_or_false_questions import questions
 
 
 class TrueOrFalseGame(tk.Frame):
-
+    """ The True or False game itself, asks questions and checks answers. """
     button_width = 10
     question_label = feedback_label = None
     true_button = false_button = exit_button = next_button = None
     current_question_index = 0 # Start with the first question
 
     def __init__(self, **kwargs):
-
+        """ The game window. """
         self.root = kwargs['master']
         super().__init__(**kwargs)
 
@@ -32,7 +33,7 @@ class TrueOrFalseGame(tk.Frame):
         self.exit_button.place(relx=0.5, y=200, anchor = tk.S)
 
     def check_answer(self, answer):
-        
+        """ Checks the user's selected answer against the questions dictionary. """
         if(questions[self.current_question_index]["answer"] == answer):
             print("CORRECT")
         else:
@@ -46,6 +47,7 @@ class TrueOrFalseGame(tk.Frame):
         self.next_button.place(relx=0.5, y=150, anchor = tk.CENTER)
 
     def next_question(self):
+        """ Moves onto the next question after removing the previous one. """
         # Hide feedback and Next button
         self.feedback_label.place_forget()
         self.next_button.place_forget()
@@ -56,6 +58,7 @@ class TrueOrFalseGame(tk.Frame):
         
 
     def exit(self):
+        """ CLoses the window after confirmation."""
         answer = messagebox.askyesno("Exit","Are you sure you want to quit the game?")
 
         if answer == True:

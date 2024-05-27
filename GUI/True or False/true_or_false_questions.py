@@ -1,3 +1,4 @@
+""" The questions, answers and feedback for the True or False game. """
 questions = [
         {
             "statement": "Sharks are mammals.",

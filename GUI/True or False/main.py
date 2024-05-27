@@ -1,3 +1,4 @@
+""" Starts the True or False game. Run this one. """
 import tkinter as tk
 from login import *
 from mainmenu import *
@@ -31,17 +32,20 @@ current_screen.place(relx=.5, rely=.5,anchor=tk.CENTER)
 # Note: For consistency, Frames will only use place()
 
 def login_success(*args):
+    """ Opens the main menu screen when the user enters the correct username and password. """
     print("Go to main menu")
     global main_menu_screen
     switch_screen(main_menu_screen)
 
 def switch_screen(new_screen):
+    """ Closes the current screen and opens the new one in the middle. """
     global current_screen
     current_screen.place_forget()
     current_screen = new_screen
     current_screen.place(relx=.5, rely=.5,anchor=tk.CENTER)
 
 def start_new_game(*args):
+    """ Restarts the program and goes back to the game screen. """
     print("Starting new game...")
     global game_screen
     switch_screen(game_screen)
