@@ -25,7 +25,7 @@ class TrueOrFalseGame(tk.Frame):
 		self.false_button = tk.Button(self, text="False", width=self.button_width, command=lambda: self.check_answer(False))
 		self.false_button.place(x=150, y=50)
 
-		# Only display feedback and Next bubtton after user answered
+		# Only display feedback and Next button after user answered
 		self.feedback_label = tk.Label(self, wrap=200, text=questions[self.current_question_index]["feedback"], background=kwargs['background'])
 		self.next_button = tk.Button(self, text="Next", width=self.button_width, command=self.next_question)
 
