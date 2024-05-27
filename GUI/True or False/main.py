@@ -1,8 +1,8 @@
 """ Starts the True or False game. Run this one. """
 import tkinter as tk
-from login import *
-from mainmenu import *
-from trueorfalse import *
+from login import LoginScreen
+from mainmenu import MainMenuScreen
+from trueorfalse import TrueOrFalseGame
 
 bg_color = "white"
 app_width = 300
