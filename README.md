@@ -49,6 +49,35 @@ A clip-art picture of a house on a light grey background that is used as a butto
 
 The program itself. Does what is described in the section above.
 
+### True or False
+
+> [!NOTE]
+> This program will ask for a **username** and **password** upon opening. The username is `Jacob` and the password is `Takahē1848?!`.
+
+A game for us to study, copied from [level-2-programming-assessment-mrs-chavez](https://github.com/MRGS-Computer-Scientist/level-2-programming-assessment-mrs-chavez/tree/main), which I then "improved".
+
+Answer 8 different True or False questions about animals.
+
+#### login.py
+
+Contains the login screen and process.
+
+#### main.py
+
+**Run this file.**  It starts the program.
+
+#### mainmenu.py
+
+Contains the main menu where you can choose to play or exit.
+
+#### true_or_false_questions.py
+
+Contains a dictionary of all the questions and their answers.
+
+#### trueorfalse.py
+
+Contains the code for the game itself.
+
 ### background.py
 
 Brings up a window with two buttons. One says "Red." and the other says "Blue." and you click one to change the background to the respective colour.
