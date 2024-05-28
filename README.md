@@ -52,9 +52,9 @@ The program itself. Does what is described in the section above.
 ### True or False
 
 > [!NOTE]
-> This program will ask for a **username** and **password** upon opening. The username is `admin` and the password is `pass`.
+> This program will ask for a **username** and **password** upon opening. The username is `Jacob` and the password is `Takahē1848?!`.
 
-A game for us to study, copied from [level-2-programming-assessment-mrs-chavez](https://github.com/MRGS-Computer-Scientist/level-2-programming-assessment-mrs-chavez/tree/main).
+A game for us to study, copied from [level-2-programming-assessment-mrs-chavez](https://github.com/MRGS-Computer-Scientist/level-2-programming-assessment-mrs-chavez/tree/main), which I then "improved".
 
 Answer 8 different True or False questions about animals.
 
