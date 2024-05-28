@@ -3,28 +3,28 @@
 from tkinter import Tk, Listbox, Label, Button
 
 class Student:
-    """ Sets up a student with the properties of a name and grade, currently empty. """
+	""" Sets up a student with the properties of a name and grade, currently empty. """
 
-    def __init__(self, name):
-        self.name = name
-        self.grade = None
+	def __init__(self, name):
+		self.name = name
+		self.grade = None
 
-    def get_grade(self):
-        """ Returns grade of selected student. """
-        return self.grade
+	def get_grade(self):
+		""" Returns grade of selected student. """
+		return self.grade
 
-    def set_grade(self, grade):
-        """ Sets grade of student. """
-        self.grade = grade
+	def set_grade(self, grade):
+		""" Sets grade of student. """
+		self.grade = grade
 
-    def display_name(self):
-        """ Displays student's names. """
-        print(self.name)
+	def display_name(self):
+		""" Displays student's names. """
+		print(self.name)
 
 def show_grade():
-    " Shows student's grades. Currently only shows the first student's grades (me). "
-    # Show grade using a label.
-    grade_label.config(text=csc_2[0].get_grade())
+	" Shows student's grades. Currently only shows the first student's grades (me). "
+	# Show grade using a label.
+	grade_label.config(text=csc_2[0].get_grade())
 
 # Starts the dictionary with currently no students.
 csc_2 = []
