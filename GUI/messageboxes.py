@@ -33,11 +33,11 @@ def showinfo():
 
 def showwarning():
 	""" Brings up the showwarning messagebox. """
-	messagebox.showwarning("This text appears nowhere.","This is an showwarning messagebox.")
+	messagebox.showwarning("This text appears nowhere.","Bad things might happen!")
 
 def showerror():
 	""" Brings up the showerror messagebox. """
-	messagebox.showerror("This text appears nowhere.","This is an showerror messagebox.")
+	messagebox.showerror("This text appears nowhere.","Bad things have happened!")
 
 # Creates buttons in the window.
 # Askokcancel button.
