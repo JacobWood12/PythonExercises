@@ -6,6 +6,7 @@ from tkinter import Tk, Button, messagebox
 window = Tk()
 window.geometry("400x200")
 
+# Functions for the buttons.
 def askokcancel():
 	""" Brings up the Askokcancel messagebox. """
 	messagebox.askokcancel("This text appears nowhere.","Continue?")
@@ -25,6 +26,18 @@ def askyesno():
 def askyesnocancel():
 	""" Brings up the Askyesnocancel messagebox. """
 	messagebox.askyesnocancel("This text appears nowhere?","Should your computer explode?")
+
+def showinfo():
+	""" Brings up the showinfo messagebox. """
+	messagebox.showinfo("This text appears nowhere.","This is an showinfo messagebox.")
+
+def showwarning():
+	""" Brings up the showwarning messagebox. """
+	messagebox.showwarning("This text appears nowhere.","This is an showwarning messagebox.")
+
+def showerror():
+	""" Brings up the showerror messagebox. """
+	messagebox.showerror("This text appears nowhere.","This is an showerror messagebox.")
 
 # Creates buttons in the window.
 # Askokcancel button.
@@ -46,6 +59,18 @@ askyesno_btn.pack()
 # Askyesnocancel button.
 askyesnocancel_btn = Button(window, text="askyesnocancel", command=askyesnocancel)
 askyesnocancel_btn.pack()
+
+# Showinfo button.
+information_btn = Button(window, text="information", command=showinfo)
+information_btn.pack()
+
+# Showwarning button.
+showwarning_btn = Button(window, text="showwarning", command=showwarning)
+showwarning_btn.pack()
+
+# Showerror button.
+showerror_btn = Button(window, text="showerror", command=showerror)
+showerror_btn.pack()
 
 # Starts the main event loop and opens the window.
 window.mainloop()
