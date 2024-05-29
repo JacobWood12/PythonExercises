@@ -1,3 +1,4 @@
+""" A window with north, south, east and west buttons and a north label."""
 from tkinter import Tk, Button, Label
 
 window = Tk()
