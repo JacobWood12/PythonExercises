@@ -1,10 +1,10 @@
 """ Various (I think all the) different types of messageboxes. """
 # Tkinter is for the GUI.
-from tkinter import Tk, Button, messagebox
+from tkinter import Tk, Label, Button, messagebox
 
 # Sets up window.
 window = Tk()
-window.geometry("200x250")
+window.geometry("200x300")
 window.title("Messageboxes.")
 
 # Functions for the buttons.
@@ -40,7 +40,11 @@ def showerror():
 	""" Brings up the showerror messagebox. """
 	messagebox.showerror("This text appears nowhere.","Bad things have happened!")
 
-# Creates buttons in the window.
+# Creates buttons and labels in the window.
+# Question message boxes section label.
+question_label = Label(window, text="Question message boxes.")
+question_label.pack()
+
 # Askokcancel button.
 askokcancel_btn = Button(window, text="askokcancel", command=askokcancel)
 askokcancel_btn.pack()
@@ -61,9 +65,17 @@ askyesno_btn.pack()
 askyesnocancel_btn = Button(window, text="askyesnocancel", command=askyesnocancel)
 askyesnocancel_btn.pack()
 
+# Information message boxes section label.
+information_label = Label(window, text="Information message boxes.")
+information_label.pack()
+
 # Showinfo button.
 information_btn = Button(window, text="information", command=showinfo)
 information_btn.pack()
+
+# Warning message boxes section label.
+warning_label = Label(window, text="Warning message boxes.")
+warning_label.pack()
 
 # Showwarning button.
 showwarning_btn = Button(window, text="showwarning", command=showwarning)
