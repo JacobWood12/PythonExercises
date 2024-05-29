@@ -7,25 +7,26 @@ window = Tk()
 window.geometry("300x300")
 window.title("Compass.")
 
+def button_pressed(direction):
+	""" Changes the text of the label in the centre to the button pressed. """
+	centre_label = Label(window, text=direction)
+	centre_label.place(x=150,y=150,anchor="center")
+
 # North button.
-north_button = Button(window, text="North.", command=(print("You pressed the north button.")))
+north_button = Button(window, text="North.", command= lambda: button_pressed("North."))
 north_button.pack(side="top")
 
 # South button.
-south_button = Button(window, text="South.", command=(print("You pressed the south button.")))
+south_button = Button(window, text="South.", command= lambda: button_pressed("South."))
 south_button.pack(side="bottom")
 
 # East button.
-east_button = Button(window, text="East.", command=(print("You pressed the east button.")))
+east_button = Button(window, text="East.", command= lambda: button_pressed("East."))
 east_button.pack(side="right")
 
 # West button.
-west_button = Button(window, text="West.", command=(print("You pressed the west button.")))
+west_button = Button(window, text="West.", command= lambda: button_pressed("West."))
 west_button.pack(side="left")
-
-# North label.
-north_label = Label(window, text="North.")
-north_label.place(x=150,y=150,anchor="center")
 
 # Starts main event loop and opens the window.
 window.mainloop()

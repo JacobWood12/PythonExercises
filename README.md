@@ -88,7 +88,7 @@ Baby's first Python GUI using Tkinter. It's pretty simple, you just click the bu
 
 ### compass.py
 
-A window with north, south, east and west buttons around the edge and a north label in the middle.
+A window with north, south, east and west buttons around the edge and a label in the middle which says the most recently pressed direction.
 
 It was for learning layout management.
 
