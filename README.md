@@ -58,6 +58,10 @@ A game for us to study, copied from [level-2-programming-assessment-mrs-chavez](
 
 Answer 8 different True or False questions about animals.
 
+#### \_\_pycache__
+
+Caches the multiple files in the True or False game I think? It's not tracked by Git, so it's only visible on the computer the program is being run on, and can be deleted anytime.
+
 #### login.py
 
 Contains the login screen and process.
@@ -84,7 +88,7 @@ Brings up a window with two buttons. One says "Red." and the other says "Blue." 
 
 ### button_clicker.py
 
-Baby's first Python GUI using Tkinter. It's pretty simple, you just click the button in the window that comes up, but with a sinister twist...
+My first Python GUI using Tkinter. It's pretty simple, you just click the button in the window that comes up, but with a sinister twist...
 
 ### compass.py
 
@@ -116,7 +120,7 @@ Problem 1 on Project Euler. It finds the sum of all the multiples of 3 and 5 bel
 
 ## Other files
 
-Not projects, just for organisational purposes.
+Not projects, just for organisational purposes. They're at the root directory.
 
 ### .gitignore
 
