@@ -1,4 +1,5 @@
 """ The main menu screen for the True or False game, after the user logs in. """
+# Tkinter is for the GUI.
 import tkinter as tk
 from tkinter import messagebox
 

@@ -18,20 +18,23 @@ class LoginScreen(tk.Frame):
 		self.root = kwargs['master']
 		super().__init__(**kwargs)
 
-		# Create the widgets
+		# Username input.
 		self.username_label = tk.Label(self, text="Username")
 		self.username_label.pack()
 		self.username_entry = tk.Entry(self)
 		self.username_entry.pack()
 
+		# Password input.
 		self.password_label = tk.Label(self,text="Password")
 		self.password_label.pack()
 		self.password_entry = tk.Entry(self,show="*")
 		self.password_entry.pack()
 
+		# Confirm login button.
 		self.login_button = tk.Button(self,text="Login", command=self.verify_login)
 		self.login_button.pack()
 
+		# Incorrect username/password button.
 		self.error_label = tk.Label(self, text="Wrong password or username.", fg="red")
 
 	def verify_login(self):

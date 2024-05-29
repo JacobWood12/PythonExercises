@@ -1,8 +1,9 @@
 """ Contains the code for the True or False game itself. """
+# Tkinter is for the GUI.
+# true_or_false_questions is where the questions for the game are stored.
 import tkinter as tk
 from tkinter import messagebox
 from true_or_false_questions import questions
-
 
 class TrueOrFalseGame(tk.Frame):
 	""" The True or False game itself, asks questions and checks answers. """
@@ -16,19 +17,23 @@ class TrueOrFalseGame(tk.Frame):
 		self.root = kwargs['master']
 		super().__init__(**kwargs)
 
+		# Question label.
 		self.question_label = tk.Label(self, wrap=200, text=questions[self.current_question_index]["statement"], background=kwargs['background'])
 		self.question_label.place(relx=0.5, y=15, anchor = tk.CENTER)
 
+		# True answer button.
 		self.true_button = tk.Button(self, text="True", width=self.button_width, command=lambda: self.check_answer(True))
 		self.true_button.place(x=25, y=50)
 
+		# False answer button.
 		self.false_button = tk.Button(self, text="False", width=self.button_width, command=lambda: self.check_answer(False))
 		self.false_button.place(x=150, y=50)
 
-		# Only display feedback and Next button after user answered
+		# Only display feedback and Next button after user answered.
 		self.feedback_label = tk.Label(self, wrap=200, text=questions[self.current_question_index]["feedback"], background=kwargs['background'])
 		self.next_button = tk.Button(self, text="Next", width=self.button_width, command=self.next_question)
 
+		# Exit button.
 		self.exit_button = tk.Button(self, text="Quit Game", width=self.button_width, command=self.exit)
 		self.exit_button.place(relx=0.5, y=200, anchor = tk.S)
 
@@ -55,7 +60,6 @@ class TrueOrFalseGame(tk.Frame):
 		# Replace question
 		self.current_question_index = (self.current_question_index + 1) % len(questions)
 		self.question_label.configure(text=questions[self.current_question_index]["statement"])
-
 
 	def exit(self):
 		""" Closes the window after confirmation. """
