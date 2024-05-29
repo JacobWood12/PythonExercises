@@ -4,7 +4,8 @@ from tkinter import Tk, Button, messagebox
 
 # Sets up window.
 window = Tk()
-window.geometry("400x200")
+window.geometry("200x250")
+window.title("Messageboxes.")
 
 # Functions for the buttons.
 def askokcancel():
