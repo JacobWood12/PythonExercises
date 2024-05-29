@@ -20,4 +20,8 @@ east_btn.pack(side="right")
 west_btn = Button(window, text="West.", command=(print("You pressed the west button.")))
 west_btn.pack(side="left")
 
+# North label.
+north_label = Label(window, text="North.")
+north_label.place(x=150,y=150,anchor="center")
+
 window.mainloop()
