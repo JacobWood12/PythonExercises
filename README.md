@@ -86,6 +86,12 @@ Brings up a window with two buttons. One says "Red." and the other says "Blue." 
 
 Baby's first Python GUI using Tkinter. It's pretty simple, you just click the button in the window that comes up, but with a sinister twist...
 
+### compass.py
+
+A window with north, south, east and west buttons around the edge and a label in the middle which says the most recently pressed direction.
+
+It was for learning layout management.
+
 ### messageboxes.py
 
 I made this because I saw messageboxes in another program and wanted to experiment with them. I think it has them all.
