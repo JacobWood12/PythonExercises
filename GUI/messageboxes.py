@@ -1,4 +1,4 @@
-""" Various (I think all the_ different types of messageboxes. """
+""" Various (I think all the) different types of messageboxes. """
 # Tkinter is for the GUI.
 from tkinter import Tk, Button, messagebox
 
