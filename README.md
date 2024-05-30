@@ -122,6 +122,10 @@ Problem 1 on Project Euler. It finds the sum of all the multiples of 3 and 5 bel
 
 Not projects, just for organisational purposes. They're at the root directory.
 
+### .DS_Store
+
+No idea. Visual Studio Code put it there. It's not visible in Visual Studio Code but is on GitHub. Occasionally Visual Studio Code changes it and I don't ask questions, I just commit.
+
 ### .gitignore
 
 Specifies intentionally untracked files that Git should ignore. I just used the GitHub template for Python.
