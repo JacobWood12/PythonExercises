@@ -9,8 +9,7 @@ window.title("Compass.")
 
 def button_pressed(direction):
 	""" Changes the text of the label in the centre to the button pressed. """
-	centre_label = Label(window, text=direction)
-	centre_label.place(x=150,y=150,anchor="center")
+	centre_label.config(text=direction)
 
 # North button.
 north_button = Button(window, text="North.", command= lambda: button_pressed("North."))
@@ -27,6 +26,10 @@ east_button.pack(side="right")
 # West button.
 west_button = Button(window, text="West.", command= lambda: button_pressed("West."))
 west_button.pack(side="left")
+
+# Label in the centre that will say the pressed direction. At the start it will be empty.
+centre_label = Label(window, text=None)
+centre_label.place(x=150,y=150,anchor="center")
 
 # Starts main event loop and opens the window.
 window.mainloop()
