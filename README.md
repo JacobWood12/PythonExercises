@@ -110,6 +110,12 @@ This project is [code that I copied](https://drive.google.com/file/d/1niZqEklBdg
 
 A GUI quiz about New Zealand road rules. Learning both GUI and classes.
 
+### super.py
+
+Uses super init to create a button that can be used multiple times. It's a Level 3 technique.
+
+This project is code that I copied then "improved" from Mrs Chavez. If you want to see the version before cleaning up, switch to the `main` branch (oops, should have been in the super branch) and go to commit `225f4ea (Started super.py.)`
+
 ## Maths
 
 Projects related to maths (duh). I think they'll mostly be problems from [Project Euler](projecteuler.net/archives).
