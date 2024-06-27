@@ -100,7 +100,7 @@ I made this because I saw messageboxes in another program and wanted to experime
 
 An app for Pride Week that asks the user if they know the meaning of various words used by the Rainbow community.
 
-This project is [code that I copied](https://drive.google.com/file/d/1niZqEklBdgea0ILwd2vFiKsP474_K9Qp/view) then "improved" up from Mrs Chavez. If you want to see the version before cleaning up, switch to the `prideconversation` branch and go to commit `c1158be (Copied pride_conversation.py from second section of video - Creating and navigating to screens.`
+This project is [code that I copied](https://drive.google.com/file/d/1niZqEklBdgea0ILwd2vFiKsP474_K9Qp/view) then "improved" from Mrs Chavez. If you want to see the version before cleaning up, switch to the `prideconversation` branch and go to commit `c1158be (Copied pride_conversation.py from second section of video - Creating and navigating to screens.`
 
 ### quiz.py
 
