@@ -58,10 +58,6 @@ A game for us to study, copied from [level-2-programming-assessment-mrs-chavez](
 
 Answer 8 different True or False questions about animals.
 
-#### \_\_pycache__
-
-Caches the multiple files in the True or False game I think? It's not tracked by Git, so it's only visible on the computer the program is being run on, and can be deleted anytime.
-
 #### login.py
 
 Contains the login screen and process.
